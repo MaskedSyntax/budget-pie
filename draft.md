@@ -16,7 +16,6 @@ BudgetPie
 	- Monetization (need research): 
 		- in_app_purchase flutter plugin
 		- RevenueCat
-	
 	- Minimum Viable Product (MVP) (2-4 weeks):
 		- Basic Expense Tracking:
 			- Add exp with categories, amounts, notes.
@@ -28,7 +27,6 @@ BudgetPie
 			- By date and By Category
 		- Monetization:
 			- A "Coming Soon" section
-	
 	- Future Features:
 		- FREE
 			- Visual Analytics
@@ -52,8 +50,6 @@ BudgetPie
 				- Trend Analysis and AI-based insights (Eg. Detecting Overspending patterns)
 			- Customization Options
 				- Custom themes, categories, and dashboard layout
-				
-	
 	- Future Upgrades (Most Expensive Tier)
 		- Collaborative Budgets
 			- Shared budgets for families or couples
@@ -67,6 +63,5 @@ BudgetPie
 		- Personalized Dashboards:	
 			- Let users customize their dashboards (Eg reorder widgets, hide/show graphs)
 			- Use flutter_drag_and_drop
-
 	- Gamification (Future Upgrade - FREE tier):
 		- Introduce achievements or badges for hitting savings goals or staying within budget
