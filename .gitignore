@@ -1,32 +1,39 @@
-# Flutter/Dart
+# Flutter / Dart related
 .dart_tool/
 .packages
 .pub-cache/
 .flutter-plugins
 .flutter-plugins-dependencies
+.flutter-*
 .melos_tool/
+.metadata
 build/
 coverage/
-.flutter-*
+
+# Dependency lock file
+# Keep this ignored for libraries; commit it for apps if you want reproducibility
+pubspec.lock
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.swp
 
 # Android
 android/.gradle/
-android/captures/
 android/app/debug/
 android/app/profile/
 android/app/release/
-*.iml
-local.properties
+android/captures/
 .gradle/
+local.properties
 *.jks
 
 # iOS
-ios/Flutter/Flutter.framework
-ios/Flutter/Flutter.podspec
+ios/Flutter/
 ios/.symlinks/
 ios/Pods/
-ios/.flutter-plugins
-ios/.flutter-plugins-dependencies
 ios/Runner.xcworkspace/
 ios/Runner.xcodeproj/project.xcworkspace/
 ios/build/
@@ -46,17 +53,12 @@ linux/Flutter/ephemeral/
 linux/build/
 
 # Web
-web/.dart_tool/
 web/build/
 
-# IDEs
-.idea/
-.vscode/
-*.swp
-
 # Misc
-pubspec.lock
 *.lock
 *.log
 *.tmp
 *.bak
+.DS_Store
+Thumbs.db
