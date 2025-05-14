@@ -1,7 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:uuid/uuid.dart';
 
 const uuid = Uuid();
+final dateFormatter = DateFormat.yMd();
 
+// TODO: Add separate Categories for Netflix and other related Subscriptions
 enum ExpenseCategory {
   essentials,
   foodDining,
@@ -48,6 +52,21 @@ extension ExpenseCategoryExtension on ExpenseCategory {
   }
 }
 
+const Map<ExpenseCategory, IconData> categoryIcons = {
+  ExpenseCategory.essentials: Icons.home,
+  ExpenseCategory.foodDining: Icons.restaurant,
+  ExpenseCategory.transportation: Icons.directions_car,
+  ExpenseCategory.healthFitness: Icons.fitness_center,
+  ExpenseCategory.educationSubscriptions: Icons.school,
+  ExpenseCategory.entertainmentLeisure: Icons.movie,
+  ExpenseCategory.shopping: Icons.shopping_cart,
+  ExpenseCategory.travel: Icons.flight_takeoff,
+  ExpenseCategory.workBusiness: Icons.work,
+  ExpenseCategory.financeSavings: Icons.account_balance_wallet,
+  ExpenseCategory.giftsDonations: Icons.card_giftcard,
+  ExpenseCategory.miscellaneous: Icons.category,
+};
+
 class Expense {
   Expense({
     required this.title,
@@ -61,4 +80,8 @@ class Expense {
   final double amount;
   final DateTime date;
   final ExpenseCategory expenseCategory;
+
+  String get formattedDate {
+    return dateFormatter.format(date);
+  }
 }

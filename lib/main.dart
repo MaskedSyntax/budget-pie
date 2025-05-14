@@ -1,4 +1,4 @@
-import 'package:budgetpie/expenses.dart';
+import 'package:budgetpie/widgets/expenses.dart';
 import 'package:flutter/material.dart';
 
 void main() {
