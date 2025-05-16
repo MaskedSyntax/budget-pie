@@ -1,4 +1,5 @@
 BudgetPie
+
 - Language:
 - Dart
 - UI Framework:
@@ -109,8 +110,6 @@ Education & Subscriptions
 - Online Courses
 - Books
 - Educational Apps
-- Netflix
-- Spotify
 - Cloud Storage
 
 Entertainment & Leisure
@@ -120,6 +119,8 @@ Entertainment & Leisure
 - Hobbies
 - Parties
 - Events/Tickets
+- Netflix
+- Spotify
 
 Shopping
 

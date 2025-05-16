@@ -41,7 +41,7 @@ class _ExpensesState extends State<Expenses> {
       title: "Netflix",
       amount: 500,
       date: DateTime.now(),
-      expenseCategory: ExpenseCategory.educationSubscriptions,
+      expenseCategory: ExpenseCategory.entertainmentLeisure,
     ),
   ];
 
