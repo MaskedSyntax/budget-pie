@@ -1,3 +1,4 @@
+import 'package:budgetpie/widgets/chart/chart.dart';
 import 'package:budgetpie/widgets/expenses_list/expenses_list.dart';
 import 'package:budgetpie/widgets/new_expense.dart';
 import 'package:flutter/material.dart';
@@ -105,7 +106,10 @@ class _ExpensesState extends State<Expenses> {
         ],
       ),
       body: Column(
-        children: [Text("Expense Charts"), Expanded(child: expenseContent)],
+        children: [
+          Chart(expenses: _registeredExpenses),
+          Expanded(child: expenseContent),
+        ],
       ),
     );
   }
